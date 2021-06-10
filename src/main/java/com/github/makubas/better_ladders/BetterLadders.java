@@ -3,8 +3,6 @@ package com.github.makubas.better_ladders;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
@@ -13,7 +11,7 @@ import net.minecraft.util.registry.Registry;
 
 public class BetterLadders implements ModInitializer {
 
-	private static final IronLadderBlock IRON_LADDER = new IronLadderBlock(FabricBlockSettings.of(Material.METAL));
+	private static final IronLadderBlock IRON_LADDER = new IronLadderBlock();
 
 	@Override
 	public void onInitialize() {
