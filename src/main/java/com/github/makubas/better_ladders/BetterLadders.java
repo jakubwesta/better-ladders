@@ -3,7 +3,6 @@ package com.github.makubas.better_ladders;
 import com.github.makubas.better_ladders.block.DiamondLadderBlock;
 import com.github.makubas.better_ladders.block.GoldLadderBlock;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
-import com.github.makubas.better_ladders.block.WoodLadderBlock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
@@ -14,7 +13,6 @@ import net.minecraft.util.registry.Registry;
 
 public class BetterLadders implements ModInitializer {
 
-	private static final WoodLadderBlock WOOD_LADDER = new WoodLadderBlock();
 	private static final IronLadderBlock IRON_LADDER = new IronLadderBlock();
 	private static final GoldLadderBlock GOLD_LADDER = new GoldLadderBlock();
 	private static final DiamondLadderBlock DIAMOND_LADDER = new DiamondLadderBlock();
@@ -22,9 +20,6 @@ public class BetterLadders implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		System.out.println("Better Ladders initialised!");
-
-		Registry.register(Registry.BLOCK, new Identifier("betlad", "wood_ladder"), WOOD_LADDER);
-		Registry.register(Registry.ITEM, new Identifier("betlad", "wood_ladder"), new BlockItem(WOOD_LADDER, new FabricItemSettings().group(ItemGroup.MISC)));
 
 		Registry.register(Registry.BLOCK, new Identifier("betlad", "iron_ladder"), IRON_LADDER);
 		Registry.register(Registry.ITEM, new Identifier("betlad", "iron_ladder"), new BlockItem(IRON_LADDER, new FabricItemSettings().group(ItemGroup.MISC)));

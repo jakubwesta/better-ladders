@@ -2,7 +2,6 @@
 {
   "replace": false,
   "values": [
-    "betlad:wood_ladder",
     "betlad:iron_ladder",
     "betlad:gold_ladder",
     "betlad:diamond_ladder"

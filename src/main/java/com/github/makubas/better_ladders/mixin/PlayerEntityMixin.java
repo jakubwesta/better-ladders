@@ -3,8 +3,8 @@ package com.github.makubas.better_ladders.mixin;
 import com.github.makubas.better_ladders.block.DiamondLadderBlock;
 import com.github.makubas.better_ladders.block.GoldLadderBlock;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
-import com.github.makubas.better_ladders.block.WoodLadderBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -15,6 +15,8 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+import static com.github.makubas.better_ladders.config.ConfigFile.WOOD_LADDER_SPEED;
 
 
 @Mixin(PlayerEntity.class)
@@ -46,8 +48,8 @@ public abstract class PlayerEntityMixin extends LivingEntityMixin {
         MinecraftClient mc = MinecraftClient.getInstance();
         if (isClimbing()) {
             this.fallDistance = 0.0F;
-            if (block instanceof WoodLadderBlock) {
-                motion = getMotionOnLadder(motion, ((WoodLadderBlock) block).ladderSpeed);
+            if (block.is(Blocks.LADDER)) {
+                motion = getMotionOnLadder(motion, WOOD_LADDER_SPEED);
             } else if (block instanceof IronLadderBlock) {
                 motion = getMotionOnLadder(motion, ((IronLadderBlock) block).ladderSpeed);
             } else if (block instanceof GoldLadderBlock) {
