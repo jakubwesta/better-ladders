@@ -17,6 +17,7 @@ public class GoldLadderBlock extends LadderBlock {
                 .breakByHand(false)
                 .breakByTool(FabricToolTags.PICKAXES)
                 .sounds(BlockSoundGroup.METAL)
-                .hardness(1.75F));
+                .hardness(1.8F)
+                .nonOpaque());
     }
 }

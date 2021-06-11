@@ -1,8 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "betlad:block/diamond_ladder" },
-    "facing=east":  { "model": "betlad:block/diamond_ladder", "y": 90 },
-    "facing=south": { "model": "betlad:block/diamond_ladder", "y": 180 },
-    "facing=west":  { "model": "betlad:block/diamond_ladder", "y": 270 }
+    "facing=south": { "model": "betlad:block/diamond_ladder"},
+    "facing=west":  { "model": "betlad:block/diamond_ladder", "y": 90 },
+    "facing=north": { "model": "betlad:block/diamond_ladder", "y": 180 },
+    "facing=east":  { "model": "betlad:block/diamond_ladder", "y": 270 }
   }
 }

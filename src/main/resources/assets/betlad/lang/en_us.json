@@ -1,3 +1,5 @@
 {
-  "block.betlad.iron_ladder": "Iron ladder"
+  "block.betlad.iron_ladder": "Iron ladder",
+  "block.betlad.gold_ladder": "Gold ladder",
+  "block.betlad.diamond_ladder": "Diamond ladder"
 }

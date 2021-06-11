@@ -17,6 +17,7 @@ public class DiamondLadderBlock extends LadderBlock {
                 .breakByHand(false)
                 .breakByTool(FabricToolTags.PICKAXES)
                 .sounds(BlockSoundGroup.METAL)
-                .hardness(2.0F));
+                .hardness(2.1F)
+                .nonOpaque());
     }
 }

@@ -5,7 +5,6 @@ import com.github.makubas.better_ladders.block.GoldLadderBlock;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
 import com.github.makubas.better_ladders.block.WoodLadderBlock;
 import net.minecraft.block.Block;
-import net.minecraft.block.LadderBlock;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -45,7 +44,6 @@ public abstract class PlayerEntityMixin extends LivingEntityMixin {
         BlockPos blockPos = getBlockPos();
         Block block = getEntityWorld().getBlockState(blockPos).getBlock();
         MinecraftClient mc = MinecraftClient.getInstance();
-        // mc.inGameHud.addChatMessage(MessageType.SYSTEM, Text.of(String.valueOf(motion)), getUuid());
         if (isClimbing()) {
             this.fallDistance = 0.0F;
             if (block instanceof WoodLadderBlock) {

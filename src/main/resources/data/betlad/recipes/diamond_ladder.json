@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " L ",
+    "LUL",
+    " L "
+  ],
+  "key": {
+    "L": {
+      "item": "betlad:gold_ladder"
+    },
+    "U": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "result": {
+    "item": "betlad:diamond_ladder",
+    "count": 4
+  }
+}

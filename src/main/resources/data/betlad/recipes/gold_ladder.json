@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ULU",
+    "ULU",
+    "ULU"
+  ],
+  "key": {
+    "L": {
+      "item": "betlad:iron_ladder"
+    },
+    "U": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+  "result": {
+    "item": "betlad:gold_ladder",
+    "count": 3
+  }
+}
