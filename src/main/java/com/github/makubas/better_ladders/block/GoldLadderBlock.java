@@ -8,16 +8,15 @@ import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 
 
-public class IronLadderBlock extends LadderBlock {
+public class GoldLadderBlock extends LadderBlock {
 
-    public double ladderSpeed = ConfigFile.IRON_LADDER_SPEED;
+    public double ladderSpeed = ConfigFile.GOLD_LADDER_SPEED;
 
-    public IronLadderBlock() {
+    public GoldLadderBlock() {
         super(FabricBlockSettings.of(Material.METAL)
                 .breakByHand(false)
                 .breakByTool(FabricToolTags.PICKAXES)
                 .sounds(BlockSoundGroup.METAL)
-                .hardness(1.5F)
-                .nonOpaque());
+                .hardness(1.75F));
     }
 }

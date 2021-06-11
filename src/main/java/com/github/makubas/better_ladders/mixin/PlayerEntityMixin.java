@@ -1,7 +1,11 @@
 package com.github.makubas.better_ladders.mixin;
 
+import com.github.makubas.better_ladders.block.DiamondLadderBlock;
+import com.github.makubas.better_ladders.block.GoldLadderBlock;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
+import com.github.makubas.better_ladders.block.WoodLadderBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.LadderBlock;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
@@ -16,8 +20,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntityMixin {
-
-    private static final double IRON_LADDER_SPEED = 0.4D;
 
     protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
         super(entityType, world);
@@ -46,8 +48,14 @@ public abstract class PlayerEntityMixin extends LivingEntityMixin {
         // mc.inGameHud.addChatMessage(MessageType.SYSTEM, Text.of(String.valueOf(motion)), getUuid());
         if (isClimbing()) {
             this.fallDistance = 0.0F;
-            if (block instanceof IronLadderBlock) {
-                motion = getMotionOnLadder(motion, IRON_LADDER_SPEED);
+            if (block instanceof WoodLadderBlock) {
+                motion = getMotionOnLadder(motion, ((WoodLadderBlock) block).ladderSpeed);
+            } else if (block instanceof IronLadderBlock) {
+                motion = getMotionOnLadder(motion, ((IronLadderBlock) block).ladderSpeed);
+            } else if (block instanceof GoldLadderBlock) {
+                motion = getMotionOnLadder(motion, ((GoldLadderBlock) block).ladderSpeed);
+            } else if (block instanceof DiamondLadderBlock) {
+                motion = getMotionOnLadder(motion, ((DiamondLadderBlock) block).ladderSpeed);
             }
         }
         cir.setReturnValue(motion);

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "betlad:block/gold_ladder" },
+    "facing=east":  { "model": "betlad:block/gold_ladder", "y": 90 },
+    "facing=south": { "model": "betlad:block/gold_ladder", "y": 180 },
+    "facing=west":  { "model": "betlad:block/gold_ladder", "y": 270 }
+  }
+}
