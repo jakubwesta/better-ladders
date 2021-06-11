@@ -1,18 +1,21 @@
 {
   "schemaVersion": 1,
   "id": "betlad",
-  "version": "0.1",
+  "version": "1.0",
 
   "name": "Better ladders",
-  "description": "That mod adds new ladder types!",
+  "description": "That mod makes ladders better!",
   "authors": [
     "makubas"
   ],
   "contact": {
-    "sources": "https://github.com/makubas/better-ladders"
+    "homepage": "https://github.com/makubas/better-ladders",
+    "sources": "https://github.com/makubas/better-ladders",
+    "issues": "https://github.com/makubas/better-ladders/issues",
+    "email": "jakub.westa@gmail.com"
   },
 
-  "license": "CC0-1.0",
+  "license": "MIT License",
   "icon": "assets/betlad/icon.png",
 
   "environment": "*",

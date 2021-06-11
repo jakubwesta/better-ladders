@@ -1,9 +1,12 @@
-# Fabric Example Mod
+# Better Ladders
 
-## Setup
+A minecraft mod that extends ladders section.
+Each ladder has now its own **3D model**!
 
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+It adds **3 NEW** ladder types:
+* Iron
+* Gold
+* Diamond
 
-## License
-
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+You can change each one's speed in *ConfigFile*. By default, wood ladders are 100% speed, and each better one add +50%
+speed of the wood one.
