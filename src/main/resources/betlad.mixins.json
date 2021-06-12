@@ -4,7 +4,6 @@
   "package": "com.github.makubas.better_ladders.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "LadderBlockMixin",
     "LivingEntityMixin",
     "PlayerEntityMixin"
   ],

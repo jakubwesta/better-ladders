@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "block/iron_ladder",
-		"particle": "block/iron_ladder"
+		"0": "betlad:block/iron_ladder",
+		"particle": "betlad:block/iron_ladder"
 	},
 	"elements": [
 		{
