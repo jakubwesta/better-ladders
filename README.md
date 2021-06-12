@@ -1,6 +1,6 @@
 # Better Ladders
 
-A minecraft mod that extends ladders section.
+A [minecraft mod](https://www.curseforge.com/minecraft/mc-mods/better-ladders) that extends ladders section.
 Each ladder has now its own **3D model**!
 
 It adds **3 NEW** ladder types:
