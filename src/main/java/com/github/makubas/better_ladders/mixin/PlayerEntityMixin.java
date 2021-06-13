@@ -48,7 +48,7 @@ public abstract class PlayerEntityMixin extends LivingEntityMixin {
         MinecraftClient mc = MinecraftClient.getInstance();
         if (isClimbing()) {
             this.fallDistance = 0.0F;
-            if (block.is(Blocks.LADDER)) {
+            if (block.getDefaultState().getBlock() == Blocks.LADDER) {
                 motion = getMotionOnLadder(motion, WOOD_LADDER_SPEED);
             } else if (block instanceof IronLadderBlock) {
                 motion = getMotionOnLadder(motion, ((IronLadderBlock) block).ladderSpeed);

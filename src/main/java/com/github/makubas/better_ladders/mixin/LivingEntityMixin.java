@@ -17,13 +17,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class LivingEntityMixin extends Entity {
 
     @Shadow public abstract boolean isClimbing();
-
     @Shadow public abstract boolean isHoldingOntoLadder();
-
     @Shadow protected boolean jumping;
-
-    @Shadow public abstract BlockState getBlockState();
-
     @Shadow public abstract boolean isInsideWall();
 
     public LivingEntityMixin(EntityType<?> type, World world) {
