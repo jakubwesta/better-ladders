@@ -1,0 +1,5 @@
+build.gradle merge=ours
+gradle.properties merge=ours
+gradlew merge=ours
+gradlew.bat merge=ours
+src/main/resources/fabric.mod.json merge=ours
