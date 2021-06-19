@@ -5,4 +5,5 @@ public class ConfigFile {
     public static double IRON_LADDER_SPEED = 0.18D;
     public static double GOLD_LADDER_SPEED = 0.24D;
     public static double DIAMOND_LADDER_SPEED = 0.30D;
+    public static double NETHERITE_LADDER_SPEED = 0.36D;
 }

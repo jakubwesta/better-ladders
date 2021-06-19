@@ -3,6 +3,7 @@ package com.github.makubas.better_ladders;
 import com.github.makubas.better_ladders.block.DiamondLadderBlock;
 import com.github.makubas.better_ladders.block.GoldLadderBlock;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
+import com.github.makubas.better_ladders.block.NetheriteLadderBlock;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.minecraft.item.BlockItem;
@@ -16,6 +17,7 @@ public class BetterLadders implements ModInitializer {
 	private static final IronLadderBlock IRON_LADDER = new IronLadderBlock();
 	private static final GoldLadderBlock GOLD_LADDER = new GoldLadderBlock();
 	private static final DiamondLadderBlock DIAMOND_LADDER = new DiamondLadderBlock();
+	private static final NetheriteLadderBlock NETHERITE_LADDER = new NetheriteLadderBlock();
 
 	@Override
 	public void onInitialize() {
@@ -30,5 +32,7 @@ public class BetterLadders implements ModInitializer {
 		Registry.register(Registry.BLOCK, new Identifier("betlad", "diamond_ladder"), DIAMOND_LADDER);
 		Registry.register(Registry.ITEM, new Identifier("betlad", "diamond_ladder"), new BlockItem(DIAMOND_LADDER, new FabricItemSettings().group(ItemGroup.MISC)));
 
+		Registry.register(Registry.BLOCK, new Identifier("betlad", "netherite_ladder"), NETHERITE_LADDER);
+		Registry.register(Registry.ITEM, new Identifier("betlad", "netherite_ladder"), new BlockItem(NETHERITE_LADDER, new FabricItemSettings().group(ItemGroup.MISC)));
 	}
 }

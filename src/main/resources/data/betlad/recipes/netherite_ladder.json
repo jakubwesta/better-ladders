@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LLL",
+    "LUL",
+    "LLL"
+  ],
+  "key": {
+    "L": {
+      "item": "betlad:diamond_ladder"
+    },
+    "U": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "betlad:netherite_ladder",
+    "count": 8
+  }
+}
