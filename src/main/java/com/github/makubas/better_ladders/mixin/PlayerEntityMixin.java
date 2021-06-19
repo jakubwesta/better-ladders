@@ -3,6 +3,7 @@ package com.github.makubas.better_ladders.mixin;
 import com.github.makubas.better_ladders.block.DiamondLadderBlock;
 import com.github.makubas.better_ladders.block.GoldLadderBlock;
 import com.github.makubas.better_ladders.block.IronLadderBlock;
+import com.github.makubas.better_ladders.block.NetheriteLadderBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.MinecraftClient;
@@ -56,6 +57,8 @@ public abstract class PlayerEntityMixin extends LivingEntityMixin {
                 motion = getMotionOnLadder(motion, ((GoldLadderBlock) block).ladderSpeed);
             } else if (block instanceof DiamondLadderBlock) {
                 motion = getMotionOnLadder(motion, ((DiamondLadderBlock) block).ladderSpeed);
+            } else if (block instanceof NetheriteLadderBlock) {
+                motion = getMotionOnLadder(motion, ((NetheriteLadderBlock) block).ladderSpeed);
             }
         }
         cir.setReturnValue(motion);

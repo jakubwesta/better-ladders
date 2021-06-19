@@ -1,5 +1,6 @@
 {
   "block.betlad.iron_ladder": "Iron Ladder",
   "block.betlad.gold_ladder": "Gold Ladder",
-  "block.betlad.diamond_ladder": "Diamond Ladder"
+  "block.betlad.diamond_ladder": "Diamond Ladder",
+  "block.betlad.netherite_ladder": "Netherite Ladder"
 }

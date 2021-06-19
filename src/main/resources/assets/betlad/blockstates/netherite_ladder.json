@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=south": { "model": "betlad:block/netherite_ladder"},
+    "facing=west":  { "model": "betlad:block/netherite_ladder", "y": 90 },
+    "facing=north": { "model": "betlad:block/netherite_ladder", "y": 180 },
+    "facing=east":  { "model": "betlad:block/netherite_ladder", "y": 270 }
+  }
+}

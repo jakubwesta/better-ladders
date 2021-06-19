@@ -7,6 +7,7 @@ It adds **3 NEW** ladder types:
 * Iron
 * Gold
 * Diamond
+* Netherite
 
 You can change each one's speed in *ConfigFile*. By default, wood ladders are 100% speed, and each better one add +50%
 speed of the wood one.
