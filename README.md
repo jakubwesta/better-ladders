@@ -3,7 +3,7 @@
 A [minecraft mod](https://www.curseforge.com/minecraft/mc-mods/better-ladders) that extends ladders section.
 Each ladder has now its own **3D model**!
 
-It adds **3 NEW** ladder types:
+It adds **4 NEW** ladder types:
 * Iron
 * Gold
 * Diamond
