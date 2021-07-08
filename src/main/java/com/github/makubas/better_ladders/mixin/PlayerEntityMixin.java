@@ -6,7 +6,7 @@ import com.github.makubas.better_ladders.block.IronLadderBlock;
 import com.github.makubas.better_ladders.block.NetheriteLadderBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.MinecraftClient;
+//import net.minecraft.client.MinecraftClient;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -46,7 +46,8 @@ public abstract class PlayerEntityMixin extends LivingEntityMixin {
     protected void applyClimbingSpeed(Vec3d motion, CallbackInfoReturnable<Vec3d> cir) {
         BlockPos blockPos = getBlockPos();
         Block block = getEntityWorld().getBlockState(blockPos).getBlock();
-        MinecraftClient mc = MinecraftClient.getInstance();
+        //Unused, causes crash on server. Fixes issue #1.
+        //MinecraftClient mc = MinecraftClient.getInstance();
         if (isClimbing()) {
             this.fallDistance = 0.0F;
             if (block.getDefaultState().getBlock() == Blocks.LADDER) {
